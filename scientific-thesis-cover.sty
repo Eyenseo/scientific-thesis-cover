@@ -337,23 +337,29 @@
                                         \vskip 17.5mm plus 35mm minus 12.5mm}\hfil}}}%
                 \vskip 20mm %%%%%
 
-                \vbox to 15mm{%
-                        \begin{USCCover@TBlist}%
-                            \item[\@labelCourse: ]\@labelCourseValue
-                        \end{USCCover@TBlist}%
-                        \vfill}%
-                \vbox to 45mm{%
-                        \begin{USCCover@TBlist}%
-                            \item[\@labelExaminer:]\MCS@examiner
-                            \item[\@labelSupvervisor:]\MCS@supervisor
-                        \end{USCCover@TBlist}%
-                        \vfill}%
-                \vbox to 70mm{%%%%% ==> 85 mm von oben
-                        \begin{USCCover@TBlist}%
-                            \item[\@labelStartdate:]\MCS@startdate
-                            \item[\@labelEnddate:]\MCS@enddate
-                        \end{USCCover@TBlist}%
-                        \vfill}%
+                \centerline{\fboxsep=0pt
+                    \vbox to 15mm{%
+                            \begin{USCCover@TBlist}%
+                                \item[\@labelCourse: ]\@labelCourseValue
+                            \end{USCCover@TBlist}%
+                            \vfill}%
+                }
+                \centerline{\fboxsep=0pt
+                    \vbox to 45mm{%
+                            \begin{USCCover@TBlist}%
+                                \item[\@labelExaminer:]\MCS@examiner
+                                \item[\@labelSupvervisor:]\MCS@supervisor
+                            \end{USCCover@TBlist}%
+                            \vfill}%
+                }
+                \centerline{\fboxsep=0pt
+                    \vbox to 70mm{%%%%% ==> 85 mm von oben
+                            \begin{USCCover@TBlist}%
+                                \item[\@labelStartdate:]\MCS@startdate
+                                \item[\@labelEnddate:]\MCS@enddate
+                            \end{USCCover@TBlist}%
+                            \vfill}%
+                }
 
                 \vss}\hss}%
     %
